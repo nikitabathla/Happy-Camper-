@@ -1,0 +1,59 @@
+
+<body [ngStyle]="{'background':  'url(https://mbtskoudsalg.com/images/space-doodle-png.png)'}">
+<div class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" routerLink="/" routerLinkActive = "active">Happy Camper <i class="fa fa-child"></i></a>
+          </div>
+          <ul class="navbar-nav nav navbar-right">
+              <!--<li routerLinkActive = "active"><a routerLink="/sign-up">Sign Up <i class="fa fa-user-circle-o"></i></a></li>-->
+              <!--<li routerLinkActive = "active"><a routerLink="/login">Login<i class="fa fa-sign-in"></i></a></li>-->
+              <li routerLinkActive = "active"><a routerLink="/contact">Contact Us <i class="fa fa-address-book-o"></i></a></li>
+              <!--<li routerLinkActive = "active"><a routerLink="explore">Explore <i class="fa fa-spinner"></i></a></li>-->
+              <li routerLinkActive = "active" (click) = "logout()"><a>Logout <i class="fa fa-spinner"></i></a></li>
+             <li  *ngIf = "logged"class="abc"><i class="fa fa-user-circle-o"></i> {{userName}}</li>
+          </ul>
+           
+        </div>
+      </div> 
+      
+<button type="button" class="btn submit" (click) = "onClick()">Click here to submit your work <i class="fa fa-hand-peace-o fa-lg"></i></button>
+<!--<button class="btn1 btn" (click) = "logout()">Logout</button>-->
+<br><br>
+<div class="animated bounceIn btn-toolbar">
+    <button (click) = "func($event)" type="button" class="btn btn-lg">Show All &nbsp;<i class="material-icons">
+        drag_indicator
+        </i></button>
+    <button (click) = "func($event)" type="button" class="btn btn-lg" value="Poetry">Poetry &nbsp;<i class="material-icons">
+        local_florist
+        </i></button>
+    <button (click) = "func($event)" type="button" class="btn btn-lg" value="Microfiction">Microfiction &nbsp;<i class="material-icons">
+        free_breakfast
+        </i></button>
+    <button (click) = "func($event)" type="button" class="btn btn-lg" value="Letter">Letters &nbsp;<i class="material-icons">
+        local_post_office
+        </i></button>
+    <button (click) = "func($event)" type="button" class="btn btn-lg" value="Short Story">Short Stories &nbsp;<i class="material-icons">
+        speaker_notes
+        </i></button>
+    <button (click) = "func($event)" type="button" class="btn btn-lg" value="Artwork">Artwork &nbsp; <i class="material-icons">
+        camera_enhance
+        </i></button>
+  </div><br><br>
+ <ul class="images">
+      <li *ngFor = "let image of image | imagefilter : x ">
+    <img #img src="{{image.url}}" [ngStyle] = "{'width':'26%','height':'26%'}" [className]  ="'img-thumbnail'">
+    <!--<button (click) = "likedButton(img)" class="btn btn-primary">Like &nbsp;{{image.likes}}</button>-->
+      </li>
+  </ul>
+  <br>
+  <footer class="page-footer font-medium">
+    <div class="footer-copyright text-center">© 2018 Copyright: Happy Camper</div>
+  </footer>
+  </body>
+  
+  
+
+
+
+

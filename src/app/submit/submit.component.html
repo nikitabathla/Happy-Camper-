@@ -1,0 +1,71 @@
+<!--<div class="submit">
+  <div class="form-group">
+    <textarea class="form-control" rows="20" cols="20"></textarea>
+  </div>
+</div>-->
+<body [ngStyle]="{'background':  'url(https://wallpapercave.com/wp/wp1836700.jpg)'}">
+<div class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" routerLink="/" routerLinkActive = "active">Happy Camper <i class="fa fa-child"></i></a>
+      </div> 
+      <ul class="navbar-nav nav navbar-right">
+          <!--<li routerLinkActive = "active"><a routerLink="/sign-up">Sign Up <i class="fa fa-user-circle-o"></i></a></li>-->
+          <!--<li routerLinkActive = "active"><a routerLink="/login">Login<i class="fa fa-sign-in"></i></a></li>-->
+          <li routerLinkActive = "active"><a routerLink="/contact">Contact Us <i class="fa fa-address-book-o"></i></a></li>
+          <li routerLinkActive = "active"><a routerLink="/explore">Explore <i class="fa fa-bicycle"></i></a></li>
+          <li routerLinkActive = "active" (click) = "logout()"><a>Logout <i class="fa fa-spinner"></i></a></li>
+          <li *ngIf = "logged" class="abc"><i class="fa fa-user-circle-o"></i> {{userName}}</li>
+      </ul>
+       
+    </div>
+  </div>
+  <br>
+  <br>
+<div class="submit">
+  <div class="dropdown">
+    <select #option name="catergory" (change) = "display(option)" >
+      <option class="demo">Category</option>
+      <option class="demo">Poetry</option>
+      <option class="demo">Microfiction</option>
+      <option class="demo">Letter</option>
+      <option class="demo">Short Story</option>
+      <option class="demo">Artwork</option>
+    </select>
+  </div>
+<!--<div class="editor" [froalaEditor] [(froalaModel)] = "content" ></div>
+<br>
+{{content}}-->
+
+<!--<label class="btn btn-file">
+  Browse <input type="file" style="display: none;" (change)="onFileSelected($event)">
+</label>--> 
+<input type="file" (change)="onFileSelected($event)">
+<button type="button" class="btn" (click) ="onUpload()">Upload <i class="fa fa-lg fa-upload"></i></button>
+<br>
+<br>
+<h4>Please upload an image file only.</h4>
+</div>
+<footer class="page-footer font-medium">
+  <div class="footer-copyright text-center">© 2018 Copyright: Happy Camper</div>
+</footer>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</body>
+
+
+<!--<img width="28%" height="28%" src= "https://78.media.tumblr.com/4eee52444789a892cdf80006e5a6b343/tumblr_ngb2jiH1Em1tsybqfo1_1280.jpg">-->
+
+
+
+

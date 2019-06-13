@@ -1,0 +1,29 @@
+<div class="card animated slideInLeft">
+    <h1 class="card-header">Sign Up <i class="fa fa-user-circle-o" aria-hidden="true"></i></h1>
+        <div class="card-body">
+      <form [formGroup] = "signupForm" (ngSubmit) = "onSubmit()">
+          <div class="md-form">
+              <label>
+                Name &nbsp;&nbsp;<i class="fa fa-address-card-o" aria-hidden="true"></i>
+                </label><br><br><br>
+              <input type="text" formControlName = "name"><br><br>
+            </div>
+          <div class="md-form">
+            <label>
+              E-mail &nbsp;&nbsp;<i class="material-icons">
+                mail_outline
+                </i>
+              </label><br><br><br>
+            <input type="email" formControlName = "email"><br><br>
+          </div>
+          <div class="md-form">
+              <label>Password &nbsp;<i class="material-icons">
+                  visibility_off
+                  </i></label><br><br><br>
+              <input type="password" formControlName = "password"><br><br>
+              <button type="submit" class="btn">Submit</button><br><br>
+          </div>
+      </form>
+    </div>
+    </div>
+

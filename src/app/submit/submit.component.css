@@ -1,0 +1,105 @@
+
+
+.dropdown {
+
+    margin-left: 185px;
+  
+}
+
+
+input[type="file"]::-webkit-file-upload-button {
+    margin-top: 50px;
+    
+    font-size: 20px;
+   color: #08508a;
+    background-color: #eed8c9;
+    border: 2px solid #eed8c9;
+    cursor: pointer;
+    border-radius: 20px;
+
+}
+
+input[type="file"] {
+    margin-left: 185px;
+   
+}
+select {
+    border: 2px solid #eed8c9;
+    width: 120px;
+    font-size: 22px;
+    font-family: 'Patrick Hand SC';
+    color: #375e97;
+    margin-top: 20px;
+}
+
+.btn,.btn:hover {
+    margin-top: 50px;
+    font-size: 16px;
+   color: #08508a;
+    background-color: #eed8c9;
+    margin-left: 182px;
+    
+}
+
+.abc {
+    color: #eed8c9;
+    font-size: 24px;
+    margin-top: 12px;
+    cursor: pointer;
+    margin-left: 2px;
+}
+
+
+footer {
+    position: fixed;
+    width: 100%;
+    background-color: #08508a;
+}
+
+
+
+ .nav {
+    font-family: 'Rancho';
+    font-size: 25px;
+    
+}
+
+.navbar-brand {
+    font-size: 28px;
+    font-family: 'Cabin Sketch';
+    
+}
+
+.navbar {
+    background-color: #08508a;
+}
+
+.navbar-nav > li >a {
+    color: #eed8c9;
+}
+
+.navbar-header > a {
+    color:  #eed8c9;
+}
+
+.navbar-nav > li >a:visited {
+background-color: #68829e;
+}
+
+.submit {
+    width: 500px;
+    height: auto;
+    background-color: #08508a;
+    margin-left: 450px;
+    margin-top: 20px;
+    border: 2px solid #eed8c9;
+    
+}
+
+h4 {
+    color: #eed8c9;
+    margin-left: 98px;
+    font-size: 22px;
+}
+
+

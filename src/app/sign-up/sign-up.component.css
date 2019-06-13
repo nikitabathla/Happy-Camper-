@@ -1,0 +1,43 @@
+.card {
+    background-color: #08508a;
+    border: 4px solid #eed8c9;
+    width: 500px;
+    height: auto;
+    margin-left: 450px;
+  
+}
+
+.card-body {
+    margin-left: 140px;
+    margin-top: 40px;
+    
+}
+ h1 {
+     text-align: center;
+     color: #eed8c9;
+    
+ }
+
+ .md-form > label {
+     font-size: 28px;
+     color: #eed8c9;
+     font-family: 'Pompiere';
+ }
+
+ input {
+     font-size: 18px;
+     color:white;
+ }
+
+ .btn,.btn:hover {
+    margin-left: 59px;
+    font-size: 16px;
+   color: #08508a;
+    background-color: #eed8c9;
+    
+}
+
+
+
+
+ 

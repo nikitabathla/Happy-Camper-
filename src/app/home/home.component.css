@@ -1,0 +1,38 @@
+
+ .nav {
+    font-family: 'Rancho';
+    font-size: 25px;
+    
+}
+
+.navbar-brand {
+    font-size: 28px;
+    font-family: 'Cabin Sketch';
+    
+}
+.page-footer {
+    background-color: #08508a;
+}
+.navbar {
+    background-color: #08508a;
+}
+
+.navbar-nav > li >a {
+    color: #eed8c9;
+}
+
+.navbar-header > a {
+    color:  #eed8c9;
+}
+
+.navbar-nav > li >a:visited {
+background-color: #68829e;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+}
+
+
+
